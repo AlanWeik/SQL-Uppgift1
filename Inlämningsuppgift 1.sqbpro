@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/AW/Documents/SQlite Projekt/Inlämningsuppgift 1/Inlämningsuppgift 1.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="browser pragmas query structure" current="2"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="150"/><column_width id="3" width="1009"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,9:mainCUSTOMERS"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="CUSTOMERS" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="61"/><column index="2" value="122"/><column index="3" value="117"/><column index="4" value="276"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="CUSTOMERS (id INTEGER PRIMARY KEY, first_name TEXT, last_name TEXT, email_address TEXT)" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="61"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="MOVIES" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="61"/><column index="2" value="250"/><column index="3" value="99"/><column index="4" value="191"/><column index="5" value="174"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="RENTALS" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="104"/><column index="2" value="138"/><column index="3" value="118"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="STAFF_INFO" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="216"/><column index="2" value="61"/><column index="3" value="65"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sqlite_sequence" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="68"/><column index="2" value="61"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="Inlämningsuppgift 1.sql">DROP TABLE CUSTOMERS;
+CREATE TABLE CUSTOMERS (id INTEGER PRIMARY KEY, first_name TEXT, last_name TEXT, email_address TEXT);
+
+--Denna kod stoppar in information (kunder) i vår nya tabell &quot;customers&quot;. 
+INSERT INTO CUSTOMERS (first_name, last_name, email_address) VALUES (&quot;Ricky&quot;, &quot;Bobby&quot;, &quot;assmaster@gmail.com&quot;);
+INSERT INTO CUSTOMERS (first_name, last_name, email_address) VALUES (&quot;Sasha&quot;, &quot;Jelzin&quot;, &quot;fubu@gmail.com&quot;);
+INSERT INTO CUSTOMERS (first_name, last_name, email_address) VALUES (&quot;Sampson&quot;, &quot;Simpson&quot;, &quot;uzispray@gmail.com&quot;);
+INSERT INTO CUSTOMERS (first_name, last_name, email_address) VALUES (&quot;Azamat&quot;, &quot;Bagatov&quot;, &quot;SSR@gmail.com&quot;);
+INSERT INTO CUSTOMERS (first_name, last_name, email_address) VALUES (&quot;Alexander&quot;, &quot;Berg&quot;, &quot;galenfiskare@hotmail.com&quot;);
+INSERT INTO CUSTOMERS (first_name, last_name, email_address) VALUES (&quot;Mr&quot;, &quot;Romania&quot;, &quot;lappar@hotmail.com&quot;);
+INSERT INTO CUSTOMERS (first_name, last_name, email_address) VALUES (&quot;Ricky&quot;, &quot;Martin&quot;, &quot;rickmaster@gmail.com&quot;);
+INSERT INTO CUSTOMERS (first_name, last_name, email_address) VALUES (&quot;Carlos&quot;, &quot;Slim&quot;, &quot;Slimjim@gmail.com&quot;);
+INSERT INTO CUSTOMERS (first_name, last_name, email_address) VALUES (&quot;Johhny&quot;, &quot;Karate&quot;, &quot;kentucky@gmail.com&quot;);
+INSERT INTO CUSTOMERS (first_name, last_name, email_address) VALUES (&quot;Ashy&quot;, &quot;Larry&quot;, &quot;jesusss@gmail.com&quot;);
+
+DROP TABLE MOVIES;
+CREATE TABLE MOVIES (item_code INTEGER PRIMARY KEY, title TEXT, genre TEXT, director TEXT, studio TEXT);
+
+INSERT INTO MOVIES (title, genre, director, studio) VALUES (&quot;Pulp Fiction&quot;, &quot;Action&quot;, &quot;Quentin Tarantino&quot;, &quot;Miramax&quot;);
+INSERT INTO MOVIES (title, genre, director, studio) VALUES (&quot;spirited Away&quot;, &quot;Anime&quot;, &quot;Hayao Miyazaki&quot;, &quot;Studio Ghibli&quot;);
+INSERT INTO MOVIES (title, genre, director, studio) VALUES (&quot;Thunder Thighs&quot;, &quot;Action&quot;, &quot;Peter Gabriel&quot;, &quot;Thunder INC&quot;);
+INSERT INTO MOVIES (title, genre, director, studio) VALUES (&quot;Casa De Mi Padre&quot;, &quot;Comedy&quot;, &quot;Will Ferell&quot;, &quot;Whip&quot;);
+INSERT INTO MOVIES (title, genre, director, studio) VALUES (&quot;Only God Forgives&quot;, &quot;Action&quot;, &quot;Nicolas Refn&quot;, &quot;Dunno INC&quot;);
+INSERT INTO MOVIES (title, genre, director, studio) VALUES (&quot;The Conjuring&quot;, &quot;Horror&quot;, &quot;Gwen Stefani&quot;, &quot;Glitter Studios&quot;);
+INSERT INTO MOVIES (title, genre, director, studio) VALUES (&quot;Berberian Sound Studio&quot;, &quot;Horror&quot;, &quot;Silvio Berlusconi&quot;, &quot;Pasta&quot;);
+
+DROP TABLE STAFF_INFO;
+CREATE TABLE STAFF_INFO (title TEXT PRIMARY KEY, cost INTEGER, stock INTEGER);
+
+INSERT INTO STAFF_INFO (title, cost, stock) VALUES (&quot;Pulp Fiction&quot;, 29, 10);
+INSERT INTO STAFF_INFO (title, cost, stock) VALUES (&quot;Spirited Away&quot;, 29, 10);
+INSERT INTO STAFF_INFO (title, cost, stock) VALUES (&quot;Thunder Thighs&quot;, 29, 10);
+INSERT INTO STAFF_INFO (title, cost, stock) VALUES (&quot;Casa De Mi Padre&quot;, 29, 10);
+INSERT INTO STAFF_INFO (title, cost, stock) VALUES (&quot;Only God Forgives&quot;, 29, 10);
+INSERT INTO STAFF_INFO (title, cost, stock) VALUES (&quot;The Conjuring&quot;, 29, 10);
+INSERT INTO STAFF_INFO (title, cost, stock) VALUES (&quot;Berberian Sound Studio&quot;, 29, 10);
+
+
+DROP TABLE RENTALS; 
+CREATE TABLE RENTALS (rental_id INTEGER PRIMARY KEY, customer_id INTEGER, item_code INTEGER);
+
+INSERT INTO VALUES RENTALS (customer_id, item_code) VALUES 
+
+
+
+
+
+
+
+
+</sql><sql name="SQL 2"></sql><current_tab id="0"/></tab_sql></sqlb_project>
