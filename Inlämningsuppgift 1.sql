@@ -16,8 +16,9 @@ INSERT INTO CUSTOMERS (first_name, last_name, email_address) VALUES ("Ashy", "La
 DROP TABLE MOVIES;
 CREATE TABLE MOVIES (item_code INTEGER PRIMARY KEY, title TEXT, genre TEXT, director TEXT, studio TEXT);
 
+--Denna kod stoppar in information (kunder) i vår nya tabell "customers". 
 INSERT INTO MOVIES (title, genre, director, studio) VALUES ("Pulp Fiction", "Action", "Quentin Tarantino", "Miramax");
-INSERT INTO MOVIES (title, genre, director, studio) VALUES ("spirited Away", "Anime", "Hayao Miyazaki", "Studio Ghibli");
+INSERT INTO MOVIES (title, genre, director, studio) VALUES ("Spirited Away", "Anime", "Hayao Miyazaki", "Studio Ghibli");
 INSERT INTO MOVIES (title, genre, director, studio) VALUES ("Thunder Thighs", "Action", "Peter Gabriel", "Thunder INC");
 INSERT INTO MOVIES (title, genre, director, studio) VALUES ("Casa De Mi Padre", "Comedy", "Will Ferell", "Whip");
 INSERT INTO MOVIES (title, genre, director, studio) VALUES ("Only God Forgives", "Action", "Nicolas Refn", "Dunno INC");
@@ -37,9 +38,18 @@ INSERT INTO STAFF_INFO (title, cost, stock) VALUES ("Berberian Sound Studio", 29
 
 
 DROP TABLE RENTALS; 
-CREATE TABLE RENTALS (rental_id INTEGER PRIMARY KEY, customer_id INTEGER, item_code INTEGER);
+CREATE TABLE RENTALS (
+rental_id INTEGER PRIMARY KEY, 
+customer_id INTEGER, 
+item_code INTEGER
+--FOREIGN KEY (customer_id)
+--       REFERENCES CUSTOMERS (customer_id)
+--FOREIGN KEY (item_code)
+--       REFERENCES MOVIES (item_code) 
+	   );
 
-INSERT INTO VALUES RENTALS (customer_id, item_code) VALUES 
+
+
 
 
 
